@@ -1,0 +1,34 @@
+
+  <header>
+    <!-- Navigation -->
+    <a id="logo" routerLink="/" routerLinkActive="active" 
+      ><img id="logo-img" src="../assets/images/logo.png" alt=""
+    /></a>
+   
+    <nav>
+      <div>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/search">Search</a>
+      </div>
+      <!-- Logged-in users -->
+      <div class="user">
+        <a href="/create">Add Pair</a>
+        <a onclick="logoutUser()">Logout</a>
+      </div>
+  
+      <div>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/search">Search</a>
+      </div>
+        <!-- Guest users -->
+      <div class="guest">
+        <a href="/login">Login</a>
+        <a routerLink="/register" routerLinkActive="active"  ariaCurrentWhenActive="page">Register</a>
+      </div>
+      
+    </nav>
+  
+    
+  </header>
+
+  <router-outlet></router-outlet>
