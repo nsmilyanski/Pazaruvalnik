@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  registerUser() {
-    
+  registerUser(event: Event) {
+    event.preventDefault();
+    console.log("Hi from login")
   }
 }
