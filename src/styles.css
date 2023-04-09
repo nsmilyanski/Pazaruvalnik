@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@import "/src/styles/navigation.css";
+@import "/src/styles/form.css";
+@import "/src/styles/dashboard.css";
+@import "/src/styles/details.css";
+@import "/src/styles/search.css";
