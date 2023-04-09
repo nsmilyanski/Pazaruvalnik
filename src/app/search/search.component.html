@@ -1,0 +1,38 @@
+<section id="search">
+    <h2>Search by Brand</h2>
+
+    <form class="search-wrapper cf"  (submit)="searchProductByName($event)">
+    <input
+        id="#search-input"
+        type="text"
+        name="search"
+        placeholder="Search here..."
+        required
+    />
+    <button type="submit">Search</button>
+    </form>
+
+    <h3>Results:</h3>
+
+    <div id="search-container">
+    <ul class="card-wrapper">
+        <h2 *ngIf="products.length == 0; else elseBlock">There are no results found.</h2>
+
+        <ng-template #elseBlock>
+            <li class="card" *ngFor="let product of products">
+                <img src=" {{product.imageUrl}} " alt="travis" />
+                <p>
+                    <strong>Brand: </strong><span class="brand">{{product.brand}}</span>
+                </p>
+                <p>
+                    <strong>Model: </strong
+                    ><span class="model">{{product.model}}</span>
+                </p>
+                <p><strong>Value:</strong><span class="value">{{product.value}}</span>$</p>
+        
+                <a class="details-btn" href="/details/${shoe._id}">Details</a>
+            </li>
+        </ng-template>
+    </ul>
+    </div>
+</section>

@@ -8,6 +8,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     NavigationComponent,
     RegisterComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
