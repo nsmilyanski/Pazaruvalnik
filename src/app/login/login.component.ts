@@ -9,6 +9,6 @@ export class LoginComponent {
   loginUser(event: Event) {
     event.preventDefault();
     console.log(event.target)
-    console.log("Hi from rigister")
+    console.log("Hi from login")
   }
 }
